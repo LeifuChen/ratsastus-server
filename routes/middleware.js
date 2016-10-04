@@ -19,9 +19,14 @@ var _ = require('lodash');
 */
 exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
-		{ label: 'Main', key: 'home', href: '/' },
-		{ label: 'Miksi ratsastus', key: 'blog', href: '/blog' },
-		{ label: 'Contact', key: 'contact', href: '/contact' },
+		{ label: 'Miksi ratsastus', key: 'home', href: '/' },
+		{ label: 'Missä voin ratsastaa', key: 'blog', href: '/blog' },
+		{ label: 'Millä varusteilla', key: 'contact', href: '/contact' },
+		{ label: 'Ihana hevonen', key: 'contact', href: '/contact' },
+		{ label: 'Ratsastusetiketti', key: 'contact', href: '/contact' },
+		{ label: 'Mikä on sinun lajisi', key: 'contact', href: '/contact' },
+		{ label: 'FAQ', key: 'contact', href: '/contact' },
+		{ label: 'SRL', key: 'contact', href: '/contact' }
 	];
 	res.locals.user = req.user;
 	next();
