@@ -13,10 +13,22 @@ var handlebars = require('express-handlebars');
 keystone.init({
 	'name': 'Ratsastus',
 	'brand': 'Ratsastus',
+	'signout url': '/',
+	'wysiwyg override toolbar': false,
+	'wysiwyg menubar': true,
+	'wysiwyg skin': 'lightgray',
+	'wysiwyg additional buttons': 'searchreplace visualchars,'
+	 + ' charmap ltr rtl pagebreak paste, forecolor backcolor,'
+	 +' emoticons media, preview print ',
+	'wysiwyg additional plugins': 'example, table, advlist, anchor,'
+	 + ' autolink, autosave, bbcode, charmap, contextmenu, '
+	 + ' directionality, emoticons, fullpage, hr, media, pagebreak,'
+	 + ' paste, preview, print, searchreplace, textcolor,'
+	 + ' visualblocks, visualchars, wordcount',
 
 	'less': 'public',
 	'static': 'public',
-	'favicon': 'public/favicon.ico',
+	'favicon': 'public/SRL_Logo.png',
 	'views': 'templates/views',
 	'view engine': 'hbs',
 
@@ -55,7 +67,7 @@ keystone.set('routes', require('./routes'));
 // Setup common locals for your emails. The following are required by Keystone's
 // default email templates, you may remove them if you're using your own.
 keystone.set('email locals', {
-	logo_src: '/images/logo-email.gif',
+	logo_src: '/images/SRL_logo.png',
 	logo_width: 194,
 	logo_height: 76,
 	theme: {
