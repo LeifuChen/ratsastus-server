@@ -19,14 +19,14 @@ var _ = require('lodash');
 */
 exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
-		{ label: 'Miksi ratsastus', key: 'home', href: '/' },
-		{ label: 'Missä voin ratsastaa', key: 'blog', href: '/blog' },
-		{ label: 'Millä varusteilla', key: 'contact', href: '/contact' },
-		{ label: 'Ihana hevonen', key: 'contact', href: '/contact' },
-		{ label: 'Ratsastusetiketti', key: 'contact', href: '/contact' },
-		{ label: 'Mikä on sinun lajisi', key: 'contact', href: '/contact' },
-		{ label: 'FAQ', key: 'contact', href: '/contact' },
-		{ label: 'SRL', key: 'contact', href: '/contact' }
+		{ label: 'Miksi ratsastus', key: 'ratsastus', href: '/blog/post/miksi-ratsastus' },
+		{ label: 'Missä voin ratsastaa', key: 'ratsastaa', href: '/blog/post/missa-voin-ratsastaa' },
+		{ label: 'Millä varusteilla', key: 'varusteilla', href: '/blog/post/milla-varusteilla' },
+		{ label: 'Ihana hevonen', key: 'hevonen', href: '/contact' },
+		{ label: 'Ratsastusetiketti', key: 'Ratsastusetiketti', href: '/contact' },
+		{ label: 'Mikä on sinun lajisi', key: 'lajisi', href: '/contact' },
+		{ label: 'FAQ', key: 'faq', href: '/contact' },
+		{ label: 'SRL', key: 'srl', href: '/blog/post/srl' }
 	];
 	res.locals.user = req.user;
 	next();
