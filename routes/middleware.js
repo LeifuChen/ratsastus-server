@@ -22,10 +22,10 @@ exports.initLocals = function (req, res, next) {
 		{ label: 'Miksi ratsastus', key: 'ratsastus', href: '/blog/post/miksi-ratsastus' },
 		{ label: 'Missä voin ratsastaa', key: 'ratsastaa', href: '/blog/post/missa-voin-ratsastaa' },
 		{ label: 'Millä varusteilla', key: 'varusteilla', href: '/blog/post/milla-varusteilla' },
-		{ label: 'Ihana hevonen', key: 'hevonen', href: '/contact' },
-		{ label: 'Ratsastusetiketti', key: 'Ratsastusetiketti', href: '/contact' },
-		{ label: 'Mikä on sinun lajisi', key: 'lajisi', href: '/contact' },
-		{ label: 'FAQ', key: 'faq', href: '/contact' },
+		{ label: 'Ihana hevonen', key: 'hevonen', href: '/blog/post/ihana-hevonen' },
+		{ label: 'Ratsastusetiketti', key: 'Ratsastusetiketti', href: '/blog/post/ratsastusetiketti' },
+		{ label: 'Mikä on sinun lajisi', key: 'lajisi', href: '/blog/post/mika-on-sinun-lajisi' },
+		{ label: 'FAQ', key: 'faq', href: '/blog/post/faq' },
 		{ label: 'SRL', key: 'srl', href: '/blog/post/srl' }
 	];
 	res.locals.user = req.user;

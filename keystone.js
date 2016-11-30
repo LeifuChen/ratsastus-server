@@ -97,6 +97,11 @@ keystone.set('nav', {
 	users: 'users',
 });
 
+keystone.set('google api key', 'your-browser-key');
+keystone.set('google server api key', 'your-server-key');
+keystone.set('default region', 'fi');
+
+// optional, will limit autocomplete results to Australia
 // Start Keystone to connect to your database and initialise the web server
 
 keystone.start();
